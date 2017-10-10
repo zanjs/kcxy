@@ -1,0 +1,37 @@
+[package]
+name = "kcxy"
+version = "0.1.0"
+authors = ["kriry <krircc@gmail.com>"]
+
+[[bin]]
+name = "kcxy_project"
+path = "src/bin/main.rs"
+
+[lib]
+name = "kcxy"
+path = "src/lib.rs"
+
+[[test]]
+name = "tests"
+path = "tests/lib.rs"
+
+[dependencies]
+rocket = "^0.3.0"
+rocket_codegen = "^0.3.0"
+rocket_contrib = { version = "^0.3.0", default-features = false, features = ["json"] }
+serde = "^1.0.0"
+serde_derive = "^1.0.0"
+serde_json = "^1.0.0"
+diesel = { version = "^0.16.0", features = ["postgres","chrono","serde_json"] }
+diesel_codegen = { version = "^0.16.0", features = ["postgres"] }
+r2d2  = "^0.7.4"
+r2d2_postgres = "^0.13.0"
+r2d2-diesel = "^0.16.0"
+postgres = {version= "^0.15.1", features = ["with-chrono"]}
+dotenv = "^0.10.0"
+dotenv_macros = "^0.10.0"
+regex = "^0.1.0"
+chrono = { version = "0.4", features = ["serde"] }
+spongedown = { git = "https://github.com/ivanceras/spongedown.git" }
+timeago = "0.0.1"
+bcrypt = "^0.1.0"
