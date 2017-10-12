@@ -10,12 +10,12 @@ pub struct Message {
 
 #[get("/")]
 pub fn index() -> io::Result<NamedFile> {
-    NamedFile::open("webfront/dist/index.html")
+    NamedFile::open("webfront/build/index.html")
 }
 
 #[get("/<file..>",rank = 9)]
 pub fn public(file: PathBuf) -> Option<NamedFile> {
-    NamedFile::open(Path::new("webfront/dist").join(file)).ok()
+    NamedFile::open(Path::new("webfront/build").join(file)).ok()
 }
 
 #[error(404)]

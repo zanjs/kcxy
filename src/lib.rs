@@ -28,7 +28,7 @@ extern crate bcrypt;
 #[macro_use] mod model;
 mod utils;
 
-use controller::home;
+use controller::{home,api,user};
 
 pub fn start() {
     let pool_dsl = model::db::init_pool();
@@ -37,6 +37,7 @@ pub fn start() {
         .manage(pool_dsl)
         .manage(pool_pg)
         .mount("/", routes![home::public,home::index])
+        .mount("/user", routes![user::login_post])
         .catch(errors![home::not_found])
         .launch();
 }
