@@ -8,6 +8,7 @@ pub struct Message {
     contents: String,
 }
 
+
 #[get("/")]
 pub fn index() -> io::Result<NamedFile> {
     NamedFile::open("webfront/build/index.html")

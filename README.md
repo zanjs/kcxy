@@ -1,23 +1,24 @@
 # kcxy
 
-Rust restful webapp with rocket, diesel, postgresql, and react.js.
+Rust restful webapp with rocket, diesel, postgresql, and responsive design.It's backend for [wapp](https://github.com/mcux/wapp), so you need run the restful project with [wapp](https://github.com/mcux/wapp) together.
 
-### Start
+### Run
 
 ```bash
 $ git clone https://github.com/mcux/kcxy.git
 $ cd kcxy
 $ cargo install diesel_cli --no-default-features --features postgres
 $ diesel setup
-$ create-react-app webfront
-$ cd webfront
-$ yarn build
-$ cd ..
 $ cargo run
+$ git clone https://github.com/mcux/wapp.git
+$ cd wapp
+$ npm install
+$ npm run dev
 ```
 
+
 ### Contribute
- 
+
 welcome to contribute !
 
 

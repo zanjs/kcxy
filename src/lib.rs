@@ -38,6 +38,7 @@ pub fn start() {
         .manage(pool_pg)
         .mount("/", routes![home::public,home::index])
         .mount("/user", routes![user::login_post])
+        .mount("/api", routes![api::book])
         .catch(errors![home::not_found])
         .launch();
 }
