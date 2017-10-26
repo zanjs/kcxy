@@ -1,4 +1,21 @@
 /target/
+/wapp/.git
+/wapp/node_modules/
+/wapp/dist/
+/wapp/npm-debug.log*
+/wapp/yarn-debug.log*
+/wapp/yarn-error.log*
+/wapp/package-lock.json
+
+# Editor directories and files
+/wapp/.idea
+/wapp/.vscode
+/wapp/*.suo
+/wapp/*.ntvs*
+/wapp/*.njsproj
+/wapp/*.sln
+
+
 **/*.rs.bk
 Cargo.lock
 .idea
