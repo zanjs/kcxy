@@ -15,7 +15,6 @@ $ cargo run
 ### Run wapp
 
 ```bash
-$ git clone https://github.com/mcux/wapp.git
 $ cd wapp
 $ npm install
 $ npm run dev
