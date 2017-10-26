@@ -1,6 +1,6 @@
 # kcxy
 
-Rust restful webapp with rocket, diesel, postgresql, and responsive design.It's backend for [wapp](https://github.com/mcux/wapp), so you need run the restful project with [wapp](https://github.com/mcux/wapp) together.
+Rust restful webapp with rocket, diesel, postgresql, and responsive design.
 
 ### Run kcxy
 
