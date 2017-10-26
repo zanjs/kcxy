@@ -9,15 +9,15 @@ pub struct Message {
 }
 
 
-#[get("/")]
-pub fn index() -> io::Result<NamedFile> {
-    NamedFile::open("webfront/build/index.html")
-}
+// #[get("/")]
+// pub fn index() -> io::Result<NamedFile> {
+//     NamedFile::open("webfront/build/index.html")
+// }
 
-#[get("/<file..>",rank = 9)]
-pub fn public(file: PathBuf) -> Option<NamedFile> {
-    NamedFile::open(Path::new("webfront/build").join(file)).ok()
-}
+// #[get("/<file..>",rank = 9)]
+// pub fn public(file: PathBuf) -> Option<NamedFile> {
+//     NamedFile::open(Path::new("webfront/build").join(file)).ok()
+// }
 
 #[error(404)]
 fn not_found() -> Json<Value> {

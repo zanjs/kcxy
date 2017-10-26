@@ -2,7 +2,7 @@
 
 Rust restful webapp with rocket, diesel, postgresql, and responsive design.It's backend for [wapp](https://github.com/mcux/wapp), so you need run the restful project with [wapp](https://github.com/mcux/wapp) together.
 
-### Run
+### Run kcxy
 
 ```bash
 $ git clone https://github.com/mcux/kcxy.git
@@ -10,6 +10,11 @@ $ cd kcxy
 $ cargo install diesel_cli --no-default-features --features postgres
 $ diesel setup
 $ cargo run
+```
+
+### Run wapp
+
+```bash
 $ git clone https://github.com/mcux/wapp.git
 $ cd wapp
 $ npm install

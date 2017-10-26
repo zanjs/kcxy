@@ -36,9 +36,9 @@ pub fn start() {
     rocket::ignite()
         .manage(pool_dsl)
         .manage(pool_pg)
-        .mount("/", routes![home::public,home::index])
+        // .mount("/", routes![home::public,home::index])
         .mount("/user", routes![user::login_post])
-        .mount("/api", routes![api::book])
+        .mount("/api", routes![api::register_post])
         .catch(errors![home::not_found])
         .launch();
 }
